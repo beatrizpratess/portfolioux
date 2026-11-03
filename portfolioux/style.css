@@ -1,0 +1,23 @@
+:root {
+    --vinho: #722F37;
+    --vinho-dark: #56222A;
+    --rosa-claro: #FCE7EC;
+    --rosa-hover: #F8D5DE;
+    --neutro: #1F1F1F;
+}
+
+body {
+    background-color: #FFFFFF;
+    color: var(--neutro);
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+::selection {
+    background-color: var(--rosa-claro);
+    color: var(--vinho);
+}

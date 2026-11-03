@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATMOS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        vinho: '#722F37',
+                        'vinho-dark': '#56222A',
+                        'rosa-claro': '#FCE7EC',
+                        neutro: '#1F1F1F',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-rosa-claro/50" role="banner">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="inline-flex items-center gap-2 text-sm font-medium text-vinho hover:opacity-80 transition-opacity focus:outline-none focus:ring-2 focus:ring-vinho rounded px-2 py-1">
+                <i data-lucide="arrow-left" class="w-4 h-4"></i>
+                <span>Voltar</span>
+            </a>
+            <a href="index.html" class="font-serif text-2xl font-bold tracking-tight text-vinho">
+                Beatriz Prates
+            </a>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-6 py-16 md:py-24">
+        
+        <span class="inline-block px-3 py-1 bg-rosa-claro text-vinho text-xs font-semibold uppercase tracking-widest rounded-full mb-4">
+            NATUREZA | CONSCIENTIZAÇÃO
+        </span>
+        <h1 class="font-serif text-4xl md:text-5xl font-bold text-neutro mb-8 leading-tight">
+            ATMOS
+        </h1>
+        
+        <div class="aspect-[16/9] rounded-3xl overflow-hidden mb-12 bg-neutral-100 border border-rosa-claro/40 shadow-sm">
+            <img src="img/atmos.png" alt="Mockup do projeto Lumina" class="w-full h-full object-cover">
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="md:col-span-2 space-y-6">
+                <h2 class="font-serif text-2xl font-bold text-neutro">O que é o projeto?</h2>
+                <p class="text-neutral-600 font-light leading-relaxed">
+                    O Atmos é uma página web informativa e educativa criada para consciencializar o público sobre as alterações climáticas e a urgência de combater o aquecimento global. A interface procura equilibrar dados científicos claros com um apelo visual impactante, incentivando a ação individual e coletiva.
+                </p>
+                <p class="text-neutral-600 font-light leading-relaxed">
+                    Como funciona: Apenas uma página de conscientização sobre o aquecimento global com um design elegante e moderno.
+                </p>
+            </div>
+
+            <div class="bg-neutral-50 p-6 rounded-3xl border border-rosa-claro/50 space-y-6 h-fit">
+                <div>
+                    <h3 class="text-xs uppercase tracking-widest font-semibold text-vinho mb-3">Ferramentas Utilizadas</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-white text-neutro text-xs font-medium rounded-full border border-rosa-claro">Figma</span>
+                        <span class="px-3 py-1 bg-white text-neutro text-xs font-medium rounded-full border border-rosa-claro">HTML</span>
+                        <span class="px-3 py-1 bg-white text-neutro text-xs font-medium rounded-full border border-rosa-claro">CSS</span>
+
+                        
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-xs uppercase tracking-widest font-semibold text-vinho mb-3">Links de Acesso</h3>
+                    <div class="space-y-2.5">
+                        <a href="https://beatrizpratess.github.io/atmossite/" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between px-4 py-3 bg-vinho text-white rounded-xl text-xs font-medium hover:bg-vinho-dark transition-colors">
+                            <span>Acessar Site</span>
+                            <i data-lucide="external-link" class="w-4 h-4"></i>
+                        </a>
+                        <a href="https://www.figma.com/design/AkkKP2XhTJtRpbBSD0iYRZ/atmos?t=xsQ6OPAO7bXOXmjb-1" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between px-4 py-3 bg-white text-vinho border border-vinho/30 rounded-xl text-xs font-medium hover:bg-rosa-claro/30 transition-colors">
+                            <span>Protótipo</span>
+                            <i data-lucide="figma" class="w-4 h-4"></i>
+                        </a>
+                        <a href="https://www.figma.com/design/uiQtxMJTTK9Z0IblKgxPF8/atmos-designsystem?t=xsQ6OPAO7bXOXmjb-1" target="_blank" rel="noopener noreferrer" class="flex items-center justify-between px-4 py-3 bg-white text-vinho border border-vinho/30 rounded-xl text-xs font-medium hover:bg-rosa-claro/30 transition-colors">
+                            <span>Design System</span>
+                            <i data-lucide="layout" class="w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="bg-neutral-900 text-neutral-400 py-12 border-t border-neutral-800 mt-20" role="contentinfo">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <a href="index.html" class="font-serif text-xl font-bold text-white tracking-tight">
+                Beatriz Prates
+            </a>
+            <p class="text-xs font-light">
+                Portfólio | UX/UI Design
+            </p>
+            <div class="flex items-center space-x-6">
+                <a href="https://www.linkedin.com/in/beatriz-prates-1a40a5343/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" aria-label="LinkedIn">
+                    <i data-lucide="linkedin" class="w-5 h-5"></i>
+                </a>
+                <a href="mailto:pratesbeatriz30@gmail.com" class="hover:text-white transition-colors" aria-label="E-mail">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

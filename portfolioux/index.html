@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beatriz Prates | Portfólio</title>
+    <link rel="icon" type="image/png" href="img/portfoliofavicon__2_-removebg-preview.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        vinho: '#722F37',
+                        'vinho-dark': '#56222A',
+                        'rosa-claro': '#FCE7EC',
+                        'rosa-hover': '#F8D5DE',
+                        neutro: '#1F1F1F',
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+    <a href="#conteudo-principal" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:bg-vinho focus:text-white focus:px-4 focus:py-2 focus:rounded-md">
+        Pular para o conteúdo principal
+    </a>
+
+    <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-rosa-claro/50" role="banner">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="font-serif text-2xl font-bold tracking-tight text-vinho hover:opacity-80 transition-opacity focus:outline-none focus:ring-2 focus:ring-vinho rounded">
+                Beatriz Prates
+            </a>
+
+            <nav class="hidden md:flex items-center space-x-8" aria-label="Navegação Principal">
+                <a href="#projetos" class="text-sm font-medium hover:text-vinho transition-colors focus:outline-none focus:ring-2 focus:ring-vinho rounded px-1">Projetos</a>
+                <a href="#sobre" class="text-sm font-medium hover:text-vinho transition-colors focus:outline-none focus:ring-2 focus:ring-vinho rounded px-1">Sobre</a>
+                <a href="#formacao" class="text-sm font-medium hover:text-vinho transition-colors focus:outline-none focus:ring-2 focus:ring-vinho rounded px-1">Formação</a>
+                <a href="#contato" class="text-sm font-medium hover:text-vinho transition-colors focus:outline-none focus:ring-2 focus:ring-vinho rounded px-1">Contato</a>
+            </nav>
+
+            <button id="menu-btn" class="md:hidden p-2 text-vinho focus:outline-none focus:ring-2 focus:ring-vinho rounded" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="mobile-menu">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-rosa-claro px-6 py-4 space-y-3" role="region" aria-label="Menu Mobile">
+            <a href="#projetos" class="block text-sm font-medium hover:text-vinho py-1">Projetos</a>
+            <a href="#sobre" class="block text-sm font-medium hover:text-vinho py-1">Sobre</a>
+            <a href="#formacao" class="block text-sm font-medium hover:text-vinho py-1">Formação</a>
+            <a href="#contato" class="block text-sm font-medium hover:text-vinho py-1">Contato</a>
+        </div>
+    </header>
+
+    <main id="conteudo-principal">
+
+        <section class="max-w-6xl mx-auto px-6 py-20 md:py-32 flex flex-col items-start justify-center" aria-label="Apresentação">
+            <span class="inline-block px-3 py-1 bg-rosa-claro text-vinho text-xs font-semibold uppercase tracking-widest rounded-full mb-6">
+                UX/UI Designer
+            </span>
+            <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-neutro max-w-4xl leading-[1.1] mb-8">
+                Criando experiências digitais com <span class="italic font-normal text-vinho">clareza</span> e acessibilidade
+            </h1>
+            <p class="text-lg md:text-xl text-neutral-600 max-w-2xl font-light leading-relaxed mb-10">
+                Transformo complexidades em interfaces intuitivas e memoráveis através de metodologias centradas
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="#projetos" class="px-8 py-4 bg-vinho text-white font-medium text-sm tracking-wide rounded-full hover:bg-vinho-dark transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-vinho shadow-sm">
+                    Ver projetos
+                </a>
+                <a href="#contato" class="px-8 py-4 border border-vinho text-vinho font-medium text-sm tracking-wide rounded-full hover:bg-rosa-claro/40 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-vinho">
+                    Contato
+                </a>
+            </div>
+        </section>
+
+        <section id="projetos" class="bg-rosa-claro/30 py-24 border-t border-b border-rosa-claro/50" aria-label="Meus Projetos">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-16">
+                    <div>
+                        <span class="text-xs uppercase tracking-widest font-semibold text-vinho block mb-2">TRABALHOS PESSOAIS</span>
+                        <h2 class="font-serif text-3xl md:text-4xl font-bold text-neutro">PROJETOS</h2>
+                    </div>
+                    <p class="text-neutral-600 text-sm max-w-xs mt-4 md:mt-0 font-light">
+                        Clique em qualquer card para explorar os detalhes completos, links e ferramentas utilizadas
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                    
+                    <a href="página.html" class="group bg-white rounded-2xl overflow-hidden border border-rosa-claro shadow-sm hover:shadow-md transition-all duration-300 flex flex-col focus:outline-none focus:ring-2 focus:ring-vinho">
+                        <div class="relative overflow-hidden aspect-[16/10] bg-neutral-100">
+                            <img src="img/prisma.png" alt="Mockup do aplicativo Aura Wellness" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-vinho">
+                                QUIZ | VIAGENS
+                            </div>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow justify-between">
+                            <div>
+                                <h3 class="font-serif text-2xl font-bold text-neutro group-hover:text-vinho transition-colors mb-3">
+                                    PRISMA
+                                </h3>
+                                <p class="text-neutral-600 font-light text-sm line-clamp-2 leading-relaxed mb-6">
+                                    Questionário que auxilia os usuários a escolherem o seu próximo destino de viagem de forma personalizada
+                            </div>
+                            <div class="flex items-center justify-between pt-4 border-t border-neutral-100">
+                                <span class="text-xs font-semibold tracking-wider uppercase text-vinho">Ver Detalhes do Projeto</span>
+                                <div class="w-8 h-8 rounded-full bg-rosa-claro text-vinho flex items-center justify-center group-hover:bg-vinho group-hover:text-white transition-colors">
+                                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="página1.html" class="group bg-white rounded-2xl overflow-hidden border border-rosa-claro shadow-sm hover:shadow-md transition-all duration-300 flex flex-col focus:outline-none focus:ring-2 focus:ring-vinho">
+                        <div class="relative overflow-hidden aspect-[16/10] bg-neutral-100">
+                            <img src="img/atmos.png" alt="Mockup do sistema Lumina Design System" class="object-cover w-full h-full group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-medium text-vinho">
+                                NATUREZA | CONSCIENTIZAÇÃO
+                            </div>
+                        </div>
+                        <div class="p-8 flex flex-col flex-grow justify-between">
+                            <div>
+                                <h3 class="font-serif text-2xl font-bold text-neutro group-hover:text-vinho transition-colors mb-3">
+                                    ATMOS
+                                </h3>
+                                <p class="text-neutral-600 font-light text-sm line-clamp-2 leading-relaxed mb-6">
+                                    Página web informativa e educativa criada para consciencializar o público sobre as alterações climáticas
+                                </p>
+                            </div>
+                            <div class="flex items-center justify-between pt-4 border-t border-neutral-100">
+                                <span class="text-xs font-semibold tracking-wider uppercase text-vinho">Ver Detalhes do Projeto</span>
+                                <div class="w-8 h-8 rounded-full bg-rosa-claro text-vinho flex items-center justify-center group-hover:bg-vinho group-hover:text-white transition-colors">
+                                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="max-w-6xl mx-auto px-6 py-24" aria-label="Sobre mim">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5">
+                    <div class="relative aspect-[4/5] rounded-2xl overflow-hidden bg-rosa-claro/50 border border-rosa-claro shadow-sm">
+                        <img src="img/sobremim.jpg" alt="Retrato profissional da designer" class="object-cover w-full h-full grayscale hover:grayscale-0 transition-all duration-700">
+                    </div>
+                </div>
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-xs uppercase tracking-widest font-semibold text-vinho block">Sobre Mim</span>
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-neutro leading-tight">
+                        Unindo sensibilidade estética com rigor técnico e estratégico.
+                    </h2>
+                    <p class="text-neutral-600 font-light leading-relaxed">
+                        Sou estudante de Desenvolvimento de Software Multiplataforma, com foco em UX/UI Design e Análise de Dados. Tenho interesse em criar soluções digitais que aliem funcionalidade, usabilidade e estética, considerando as necessidades dos usuários e os objetivos de cada projeto.
+                    </p>
+                    <p class="text-neutral-600 font-light leading-relaxed">
+                       Durante a graduação, busco aplicar na prática os conceitos de experiência do usuário, design de interfaces e desenvolvimento web, explorando também o uso de dados para apoiar decisões e aprimorar soluções. 
+                    </p>
+                    <div class="pt-4 flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-rosa-claro/60 text-vinho text-xs font-medium rounded-full">UX Research</span>
+                        <span class="px-4 py-2 bg-rosa-claro/60 text-vinho text-xs font-medium rounded-full">Figma</span>
+                        <span class="px-4 py-2 bg-rosa-claro/60 text-vinho text-xs font-medium rounded-full">Design Systems</span>
+                        <span class="px-4 py-2 bg-rosa-claro/60 text-vinho text-xs font-medium rounded-full">Wireframing</span>
+                        <span class="px-4 py-2 bg-rosa-claro/60 text-vinho text-xs font-medium rounded-full">Prototipagem</span>
+                        <span class="px-4 py-2 bg-rosa-claro/60 text-vinho text-xs font-medium rounded-full">Acessibilidade WCAG</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="formacao" class="bg-neutral-50 py-24 border-t border-b border-rosa-claro/30" aria-label="Formação Acadêmica e Cursos">
+            <div class="max-w-6xl mx-auto px-6">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <span class="text-xs uppercase tracking-widest font-semibold text-vinho block mb-2">Trajetória Acadêmica</span>
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-neutro">Formação & Certificações</h2>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-white p-8 rounded-2xl border border-rosa-claro/60 shadow-sm">
+                        <div class="text-xs font-semibold text-vinho mb-2">2025 - 2027</div>
+                        <h3 class="font-serif text-xl font-bold text-neutro mb-1">Tecnologia em Desenvolvimento de Software Multiplataforma</h3>
+                        <p class="text-sm text-neutral-500 mb-4">Fatec Diadema - Luigi Papaiz</p>
+                        <p class="text-sm text-neutral-600 font-light">Com foco em UX/UI Design, Front-end e Dados</p>
+                    </div>
+
+                    <div class="bg-white p-8 rounded-2xl border border-rosa-claro/60 shadow-sm">
+                        <div class="text-xs font-semibold text-vinho mb-2">2026</div>
+                        <h3 class="font-serif text-xl font-bold text-neutro mb-1">Cursos Complementares para minha formação</h3>
+                        <p class="text-sm text-neutral-500 mb-4">Orango Senac</p>
+                        <p class="text-sm text-neutral-600 font-light">Design Responsivo, UX Criativo e Design Thinking</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="max-w-6xl mx-auto px-6 py-24 text-center" aria-label="Contato">
+            <div class="max-w-2xl mx-auto space-y-6">
+                <span class="text-xs uppercase tracking-widest font-semibold text-vinho block">Vamos conversar?</span>
+                <h2 class="font-serif text-4xl md:text-5xl font-bold text-neutro">Onde me encontrar</h2>
+                <p class="text-neutral-600 font-light leading-relaxed">
+                  Entre em contato comigo para conversarmos sobre oportunidades, projetos e parcerias. 
+                    
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+                    <a href="mailto:pratesbeatriz30@gmail.com" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-vinho text-white font-medium text-sm rounded-full hover:bg-vinho-dark transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-vinho">
+                        <i data-lucide="mail" class="w-4 h-4"></i>
+                        pratesbeatriz30@gmail.com
+                    </a>
+                    <a href="https://www.linkedin.com/in/beatriz-prates-1a40a5343/" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 border border-vinho text-vinho font-medium text-sm rounded-full hover:bg-rosa-claro/40 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-vinho">
+                        <i data-lucide="linkedin" class="w-4 h-4"></i>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-neutral-900 text-neutral-400 py-12 border-t border-neutral-800" role="contentinfo">
+        <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <a href="index.html" class="font-serif text-xl font-bold text-white tracking-tight">
+                Beatriz Prates 
+            </a>
+            <p class="text-xs font-light">
+                Portfólio | UX/UI Design
+            </p>
+            <div class="flex items-center space-x-6">
+                <a href="https://www.linkedin.com/in/beatriz-prates-1a40a5343/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition-colors" aria-label="LinkedIn">
+                    <i data-lucide="linkedin" class="w-5 h-5"></i>
+                </a>
+                <a href="mailto:pratesbeatriz30@gmail.com" class="hover:text-white transition-colors" aria-label="E-mail">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            const expanded = menuBtn.getAttribute('aria-expanded') === 'true' || false;
+            menuBtn.setAttribute('aria-expanded', !expanded);
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
